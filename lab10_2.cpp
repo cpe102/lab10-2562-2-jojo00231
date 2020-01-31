@@ -67,7 +67,7 @@ int main(){
 	yugiAction = findYugiAction(yugiScore);
 	if(yugiAction == 1){
 		cout << "Yugi draws the 3rd card!!!\n";
-		yugiCards[2] << drawCard() ;
+		yugiCards[2] = drawCard() ;
 		cout << "Yugi's 3rd card: " << cardNames[yugiCards[2]]<< "\n";
 		cout << "Yugi's new score: " << calScore(cardScores[yugiCards[0]],cardScores[yugiCards[1]],cardScores[yugiCards[2]])%10 << "\n";
 	}
