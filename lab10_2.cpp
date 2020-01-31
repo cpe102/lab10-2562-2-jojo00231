@@ -54,7 +54,8 @@ int main(){
 		playerCards[2] = drawCard() ;
 		cout << "Player draws the 3rd card!!!" << "\n";
 		cout << "Your 3rd card: " << cardNames[playerCards[2]] << "\n";
-		cout << "Your new score: " << calScore(cardScores[playerCards[0]],cardScores[playerCards[1]],cardScores[playerCards[2]])%10 << "\n";
+		playerScore = calScore(cardScores[playerCards[0]],cardScores[playerCards[1]],cardScores[playerCards[2]])%10;
+		cout << "Your new score: " << playerScore << "\n";
 	}
 	cout << "------------ Turn end -------------------\n\n";
 	
@@ -69,7 +70,8 @@ int main(){
 		cout << "Yugi draws the 3rd card!!!\n";
 		yugiCards[2] = drawCard() ;
 		cout << "Yugi's 3rd card: " << cardNames[yugiCards[2]]<< "\n";
-		cout << "Yugi's new score: " << calScore(cardScores[yugiCards[0]],cardScores[yugiCards[1]],cardScores[yugiCards[2]])%10 << "\n";
+		yugiScore = calScore(cardScores[yugiCards[0]],cardScores[yugiCards[1]],cardScores[yugiCards[2]])%10 ;
+		cout << "Yugi's new score: " << yugiScore << "\n";
 	}
 	cout << "------------ Turn end -------------------\n";
 	
